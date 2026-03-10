@@ -5,16 +5,19 @@ import android.os.Bundle
 import android.view.View
 import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
+import hr.unidu.kz.primjerilayouta.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
-
+    private lateinit var bind: ActivityMainBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        bind = ActivityMainBinding.inflate(layoutInflater)
 
-        val b = findViewById<Button>(R.id.gumbLinearniHor)
+        // Postavljanje sadržaja preko korijena bindinga
+        setContentView(bind.root)
+
         // Linearni layout (horizontalni) se prikazuje korištenjem registriranog "listenera"
-        b.setOnClickListener {
+        bind.gumbLinearniHor.setOnClickListener {
             linearniHorizontalni(it) // 'it' predstavlja View (u ovom slučaju gumb 'b')
         }
     }
