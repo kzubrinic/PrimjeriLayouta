@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:fitsSystemWindows="true">
+
+    <Button
+        android:id="@+id/gumbLinearniHor"
+        android:text="@string/linHor_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <Button
+        android:id="@+id/gumbGrid"
+        android:text="@string/grid_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="grid"/>
+    <Button
+        android:id="@+id/gumbConst"
+        android:text="@string/cons_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="constraint"/>
+
+</LinearLayout>

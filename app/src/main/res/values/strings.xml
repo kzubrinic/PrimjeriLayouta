@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name" translatable="false">Primjeri osnovnih layouta</string>
+    <string name="grid_layout">Grid layout</string>
+    <string name="linHor_layout">Linearni layout (horizontalni)</string>
+    <string name="cons_layout">Constraint layout</string>
+    <string name="l1">A</string>
+    <string name="l2">B</string>
+    <string name="l3">C</string>
+    <string name="l4">D</string>
+    <string name="l5">E</string>
+    <string name="l6">F</string>
+</resources>
